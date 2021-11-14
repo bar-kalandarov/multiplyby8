@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<script>
+
+    function ido() {
+        document.getElementById("h1").innerHTML = "Multiply By 7";
+    }
+
+    function calculate() {
+
+        var num = document.getElementById("number").value;
+        var result = num * 8;
+        if (document.getElementById("ido").checked) {
+            result = num * 7;
+        }
+        document.getElementById("p1").innerHTML = "Result: " + result;
+    }</script>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>X8</title>
+</head>
+<body>
+<center>
+    <h1 id="h1">Multiply By 8</h1>
+
+    <form action="" method="get" onsubmit="return false">
+        <label for="fname">Enter number:</label>
+        <input type="number" id="number"><br><br>
+        <input type="submit" value="Calculate" onclick="calculate()">
+    </form>
+    <p id="p1">Result:</p>
+    <br /> <br />
+
+    <input type="checkbox" id="ido" name="vehicle1" value="Bike" onclick="ido()">
+    <label for="vehicle1"> I am Ido Manor</label><br>
+</center>
+</body>
+</html>
